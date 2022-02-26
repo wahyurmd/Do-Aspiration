@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/luminari');
+
+@font-face {
+    font-family: 'stellaregular';
+    src: url('../font/stella_demo-webfont.woff2') format('woff2'),
+         url('../font/stella_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    padding-top: 0;
+    align-items: center;
+    background: url("../img/bg-primary2.svg") center bottom no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 545px) {
+  body {
+    position: relative;
+    align-items: center;
+    padding-bottom: 40px;
+    background: url("../img/bg-primary-hp2.svg") center bottom no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+}
+
+body .container {
+    align-items: center;
+    background-color: #FFF;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* .bg-tsm {
+    align-items: center;
+    background: url("../img/bg-primary.png") center bottom no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+@media only screen and (max-width: 545px) {
+  .bg-tsm {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url("../img/bg-primary-hp.png") center bottom no-repeat;
+    background-size: cover;
+  }
+} */
+
+section {
+    display: block;
+}
+
+@media only screen and (max-width: 545px) {
+  #background-dash {
+    position: relative;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.font-color {
+    font-family: 'stellaregular';
+    text-align: center;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    transform: translateY(30%);
+    font-weight: 1000;
+    background: #FFF;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    margin-bottom: 10px;
+}
+
+.font-quote {
+    font-family: 'Luminari';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transform: translateY(30%);
+    font-weight: 1000;
+    background: #FFF;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+
+textarea {
+    font-family: Trebuchet MS, Tahoma, Myriad Pro, Arial, Verdana, sans-serif;
+    overflow: auto;
+
+    -moz-box-shadow: 5px 5px 0 #c5c5c5;
+    -webkit-box-shadow: 5px 5px 0 #c5c5c5;
+    box-shadow: 5px 5px 0 #c5c5c5;
+}
