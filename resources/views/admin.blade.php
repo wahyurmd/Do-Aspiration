@@ -79,17 +79,17 @@
                             @php
                                 $no = 1;
                             @endphp
-                            @foreach ($aspiration as $row)
-                                <tbody>
-                                    <tr>
-                                        <th>{{ $no++ }}</th>
-                                        <td>{{ $row->username }}</td>
-                                        <td>{{ $row->aspiration }}</td>
-                                        <td>{{ $row->created_at }}</td>
-                                        <td>Hapus</td>
-                                    </tr>
-                                </tbody>
-                            @endforeach
+                            <tbody>
+                                @foreach ($aspiration as $row)
+                                <tr>
+                                    <th>{{ $no++ }}</th>
+                                    <td>{{ $row->username }}</td>
+                                    <td>{{ $row->aspiration }}</td>
+                                    <td>{{ $row->created_at }}</td>
+                                    <td>Hapus</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script JS DataTables -->
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>

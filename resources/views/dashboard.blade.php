@@ -107,7 +107,7 @@
                     @csrf
                     <div class="form-floating mb-3">
                         <textarea name="aspiration" class="form-control rounded-4" id="floatingInput" cols="30" rows="10" required></textarea>
-                        <input type="hidden" name="username" class="form-control rounded-4" id="floatingInput" value="{{ auth()->user()->username }}">
+                        <input type="hidden" name="username" class="form-control rounded-4" id="floatingInput" value="{{ auth()->user()->username }}" autofocus>
                         <label for="floatingInput">Give Your Aspirations Here...</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-md rounded-4 btn-primary" type="submit">Add</button>

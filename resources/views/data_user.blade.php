@@ -78,16 +78,16 @@
                             @php
                                 $no = 1;
                             @endphp
-                            @foreach ($user as $row) 
-                                <tbody>
-                                    <tr>
-                                        <th>{{ $no++ }}</th>
-                                        <td>{{ $row->name }}</td>
-                                        <td>{{ $row->username }}</td>
-                                        <td>{{ $row->password }}</td>
-                                    </tr>
-                                </tbody>
-                            @endforeach
+                            <tbody>
+                                @foreach ($user as $row) 
+                                <tr>
+                                    <th>{{ $no++ }}</th>
+                                    <td>{{ $row->name }}</td>
+                                    <td>{{ $row->username }}</td>
+                                    <td>{{ $row->password }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
                         </table>
                     </div>
                 </div>
