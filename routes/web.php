@@ -28,7 +28,10 @@ Route::post( '/logout', [ LoginController::class, 'logout' ] );
 Route::middleware(['auth'])->group(function () {
     Route::middleware(['ceklevel:Admin'])->group(function () {
         Route::get( '/dashboard', [ DashboardController::class, 'index' ] );
+
         Route::get( '/admin', [ AdminController::class, 'index' ] );
+        Route::post( '/admin/{id}', [ AdminController::class, 'delAspiration' ] );
+
         Route::get( '/data-user', [ DataUserController::class, 'index' ] );
     });
     Route::middleware(['ceklevel:Mahasiswa'])->group(function () {

@@ -12,4 +12,12 @@ class AdminController extends Controller {
         return view( 'admin', compact( 'aspiration' ) );
     }
 
+    public function delAspiration( Request $request, $id ) {
+        Aspiration::where( [ 'id' => $id ] )->update( [
+            'status' => '0',
+        ] );
+
+        return back()->with( 'successDel', 'Succesfully removed the aspiration' );
+    }
+
 }
