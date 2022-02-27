@@ -88,6 +88,9 @@
                     </div>
                 @endforeach
             </div>
+            <div class="d-flex justify-content-center pt-3">
+                {{ $aspiration->onEachSide(5)->links() }}
+            </div>
         </div>
     </section>
     <!-- End: Aspiration Week -->
@@ -106,7 +109,7 @@
                 <form action="/mhs/dashboard" method="post">
                     @csrf
                     <div class="form-floating mb-3">
-                        <textarea name="aspiration" class="form-control rounded-4" id="floatingInput" cols="30" rows="10" required></textarea>
+                        <textarea name="aspiration" class="form-control rounded-4" id="floatingInput" rows="10" required></textarea>
                         <input type="hidden" name="username" class="form-control rounded-4" id="floatingInput" value="{{ auth()->user()->username }}" autofocus>
                         <label for="floatingInput">Give Your Aspirations Here...</label>
                     </div>

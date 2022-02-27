@@ -7,7 +7,7 @@ use App\Models\Aspiration;
 class DashboardController extends Controller {
 
     public function index() {
-        $aspiration = Aspiration::all();
+        $aspiration = Aspiration::where( 'status', '1' )->paginate( '10' );
 
         return view( 'dashboard', compact( 'aspiration' ) );
     }
