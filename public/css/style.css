@@ -16,7 +16,7 @@ body, html {
 body {
     padding-top: 0;
     align-items: center;
-    background: url("../img/bg-primary2.svg") center bottom no-repeat;
+    background: url("../img/bg-primary.png") center bottom no-repeat;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ body {
     position: relative;
     align-items: center;
     padding-bottom: 40px;
-    background: url("../img/bg-primary-hp2.svg") center bottom no-repeat;
+    background: url("../img/bg-primary-hp2.png") center bottom no-repeat;
     background-size: cover;
     background-attachment:fixed;
   }

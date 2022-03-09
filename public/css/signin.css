@@ -8,18 +8,18 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url("../img/bg-primary.svg") center bottom no-repeat;
+  background: url("../img/bg-primary.png") center bottom no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-@media only screen and (max-width: 545px) {
+@media only screen and (max-width: 480px) {
   body {
     display: flex;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: url("../img/bg-primary-hp.svg") center bottom no-repeat;
+    background: url("../img/bg-primary-hp.png") center bottom no-repeat;
     background-size: cover;
   }
 }
