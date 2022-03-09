@@ -50,3 +50,13 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.btn-primary {
+  box-shadow: 0 7px #0a3e8c;;
+}
+
+.btn-primary:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
