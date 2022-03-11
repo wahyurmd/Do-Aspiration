@@ -65,7 +65,7 @@
         <div class="px-4 text-center">
             <h1 class="display-3 fw-bold font-color"><strong>ASPIRATION WEEK</strong></h1>
             <h2 class="display-4 fw-bold font-color"><strong>DO-SPIRATION</strong></h2>
-            <h4 class="font-quote">&#8223;Let's use technology to convey Aspirations&#8223;</h4>
+            <h4 class="font-quote">&#8223;SPEAK YOUR VOICE TO BRING A BETTER FUTURE&#8223;</h4>
             <div class="col-lg-6 mx-auto pt-4">
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     @if (auth()->user()->level == 'Mahasiswa')    

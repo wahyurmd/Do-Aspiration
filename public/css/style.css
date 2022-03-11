@@ -41,23 +41,6 @@ body .container {
     padding-bottom: 20px;
 }
 
-/* .bg-tsm {
-    align-items: center;
-    background: url("../img/bg-primary.png") center bottom no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-
-@media only screen and (max-width: 545px) {
-  .bg-tsm {
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: url("../img/bg-primary-hp.png") center bottom no-repeat;
-    background-size: cover;
-  }
-} */
-
 section {
     display: block;
 }
@@ -69,6 +52,22 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  #background-dash .font-quote {
+    font-family: 'stellaregular';
+    font-size: 24px;
+    text-align: center;
+    line-height: 25px;
+    /* margin-top: 15px; */
+    padding: 0;
+    transform: translateY(30%);
+    font-weight: 200;
+    background: #FFF;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  
 }
 
 .font-color {
@@ -87,12 +86,13 @@ section {
 }
 
 .font-quote {
-    font-family: 'Luminari';
+    font-family: 'stellaregular';
+    font-size: 36px;
     text-align: center;
     margin: 0;
     padding: 0;
     transform: translateY(30%);
-    font-weight: 1000;
+    font-weight: 200;
     background: #FFF;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
